@@ -28,7 +28,9 @@ client.on('ready', () => {
 
 
 
-const prefix = "1"
+
+
+const prefix = "#"
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -75,7 +77,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("BY LiZer_PRo")
+					.setFooter("CK - CITY KINGS")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -217,15 +219,6 @@ function play(guild, song) {
 
 
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-
-
-
 
 client.on('ready', () => {
    console.log(`----------------`);
@@ -237,7 +230,6 @@ client.on('ready', () => {
 client.user.setGame(`احبك يا مهايطي آموااااح`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
-
 
 
 

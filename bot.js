@@ -30,7 +30,7 @@ client.on('ready', () => {
 
 
 
-const prefix = "#"
+const prefix = "$"
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -77,7 +77,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("BY LiZer_PRO")
+					.setFooter("CK - CITY KINGS")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -227,7 +227,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`نايك أم الشوكه`,"http://twitch.tv/S-F")
+client.user.setGame(`بوت ليزر العين يلعن ام الى يقرب`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
